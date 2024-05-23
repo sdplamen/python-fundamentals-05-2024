@@ -19,6 +19,7 @@ Develop a Python script that generates a right-angled triangle pattern. The scri
 n = int(input())\
 for i in range(n + 1):\
  print(i * '*')
+ 
 ### Pattern 2: Square with Hollow Center
 
 Craft a Python program that produces a square pattern with a hollow center. The program should take the size of the square as input from the user. Here's an example output for a user input of 5:
@@ -35,7 +36,8 @@ n = int(input())\
 for i in range(n - (n - 2) - 1):\
  print(n * '')\
  for j in range(n - 2):\
-  print('' + (n - 2) * ' ' + '') print(n * '')\
+  print('' + (n - 2) * ' ' + '') print(n * '')
+  
 ### Pattern 3: Diamond
 
 Write a Python script that displays a diamond pattern based on the number of rows (height) specified by the user. For instance, if the user enters 5, the output should resemble the following:
@@ -55,7 +57,8 @@ n = int(input())\
 for i in range(n):\
  print(' ' * (n - i), '' * (i * 2 + 1))\
 for i in range(n - 2, -1, -1):\
- print(' ' * (n - i), '' * (i * 2 + 1))\
+ print(' ' * (n - i), '' * (i * 2 + 1))
+ 
 ### Pattern 4: Left-angled Triangle
 
 Design a Python code snippet to print a left-angled triangle pattern. The user should provide the number of rows. For instance, if the user inputs 4, the output should be:
@@ -69,7 +72,8 @@ Design a Python code snippet to print a left-angled triangle pattern. The user s
 ### Solution
 n = int(input())\
 for i in range(n + 1):\
- print((n - i) * '*')\
+ print((n - i) * '*')
+ 
 ### Pattern 5: Hollow Square
 
 Implement a Python program that prints a square pattern with a hollow center, where the user specifies the size of the square. For example, if the user inputs 6, the output should be:
@@ -87,7 +91,8 @@ n = int(input())\
 for i in range(n - (n - 2) - 1):\
  print(n * '')\
  for j in range(n - 2):\
-  print('' + (n - 2) * ' ' + '') print(n * '')\
+  print('' + (n - 2) * ' ' + '') print(n * '')
+  
 ### Pattern 6: Pyramid
 
 Create a Python script that prints a pyramid pattern based on the user-input number of rows. For example, if the user inputs 4, the output should be:
@@ -106,7 +111,7 @@ n = int(input())\
 for i in range(n):\
  print(' ' * (n - i), '' * (i * 2 + 1))\
 for i in range(n - 2, -1, -1):\
- print(' ' * (n - i), '' * (i * 2 + 1))\
+ print(' ' * (n - i), '' * (i * 2 + 1))
  
 ➡ Instructions:
 
