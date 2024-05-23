@@ -18,7 +18,7 @@ Develop a Python script that generates a right-angled triangle pattern. The scri
 ### Solution
 n = int(input())\
 for i in range(n + 1):\
- print(i * '*')
+\tprint(i * '*')
  
 ### Pattern 2: Square with Hollow Center
 
@@ -34,9 +34,9 @@ Craft a Python program that produces a square pattern with a hollow center. The 
 ### Solution
 n = int(input())\
 for i in range(n - (n - 2) - 1):\
- print(n * '')\
- for j in range(n - 2):\
-  print('' + (n - 2) * ' ' + '') print(n * '')
+\tprint(n * '')\
+\tfor j in range(n - 2):\
+\t\tprint('' + (n - 2) * ' ' + '') print(n * '')
   
 ### Pattern 3: Diamond
 
@@ -55,9 +55,9 @@ Write a Python script that displays a diamond pattern based on the number of row
 ### Solution
 n = int(input())\
 for i in range(n):\
- print(' ' * (n - i), '' * (i * 2 + 1))\
+\tprint(' ' * (n - i), '' * (i * 2 + 1))\
 for i in range(n - 2, -1, -1):\
- print(' ' * (n - i), '' * (i * 2 + 1))
+\tprint(' ' * (n - i), '' * (i * 2 + 1))
  
 ### Pattern 4: Left-angled Triangle
 
@@ -72,7 +72,7 @@ Design a Python code snippet to print a left-angled triangle pattern. The user s
 ### Solution
 n = int(input())\
 for i in range(n + 1):\
- print((n - i) * '*')
+\tprint((n - i) * '*')
  
 ### Pattern 5: Hollow Square
 
@@ -89,9 +89,9 @@ Implement a Python program that prints a square pattern with a hollow center, wh
 ### Solution
 n = int(input())\
 for i in range(n - (n - 2) - 1):\
- print(n * '')\
- for j in range(n - 2):\
-  print('' + (n - 2) * ' ' + '') print(n * '')
+\tprint(n * '')\
+\tfor j in range(n - 2):\
+\t\tprint('' + (n - 2) * ' ' + '') print(n * '')
   
 ### Pattern 6: Pyramid
 
@@ -109,9 +109,9 @@ Create a Python script that prints a pyramid pattern based on the user-input num
 ### Solution
 n = int(input())\
 for i in range(n):\
- print(' ' * (n - i), '' * (i * 2 + 1))\
+\tprint(' ' * (n - i), '' * (i * 2 + 1))\
 for i in range(n - 2, -1, -1):\
- print(' ' * (n - i), '' * (i * 2 + 1))
+\tprint(' ' * (n - i), '' * (i * 2 + 1))
  
 ➡ Instructions:
 
