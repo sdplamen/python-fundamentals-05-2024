@@ -18,7 +18,7 @@ Develop a Python script that generates a right-angled triangle pattern. The scri
 ### Solution
 n = int(input())\
 for i in range(n + 1):\
-\tprint(i * '*')
+/tprint(i * '*')
  
 ### Pattern 2: Square with Hollow Center
 
