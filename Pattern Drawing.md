@@ -15,7 +15,9 @@ Develop a Python script that generates a right-angled triangle pattern. The scri
 ****
 *****
 ```
-
+### Solution
+n = int(input()) for i in range(n + 1):
+ print(i * '*')
 ### Pattern 2: Square with Hollow Center
 
 Craft a Python program that produces a square pattern with a hollow center. The program should take the size of the square as input from the user. Here's an example output for a user input of 5:
@@ -27,7 +29,11 @@ Craft a Python program that produces a square pattern with a hollow center. The 
 *   *
 *****
 ```
-
+### Solution
+n = int(input()) for i in range(n - (n - 2) - 1):
+ print(n * '')
+ for j in range(n - 2):
+  print('' + (n - 2) * ' ' + '') print(n * '')
 ### Pattern 3: Diamond
 
 Write a Python script that displays a diamond pattern based on the number of rows (height) specified by the user. For instance, if the user enters 5, the output should resemble the following:
@@ -39,7 +45,15 @@ Write a Python script that displays a diamond pattern based on the number of row
  ***
   *
 ```
-
+### Hint
+3, 2, 1, 0, 1, 2, 3 space
+1, 3, 5, 7, 5, 3, 1 star
+### Solution
+n = int(input())
+for i in range(n):
+ print(' ' * (n - i), '' * (i * 2 + 1))
+for i in range(n - 2, -1, -1):
+ print(' ' * (n - i), '' * (i * 2 + 1))
 ### Pattern 4: Left-angled Triangle
 
 Design a Python code snippet to print a left-angled triangle pattern. The user should provide the number of rows. For instance, if the user inputs 4, the output should be:
@@ -50,7 +64,10 @@ Design a Python code snippet to print a left-angled triangle pattern. The user s
 **
 *
 ```
-
+### Solution
+n = int(input())
+for i in range(n + 1):
+ print((n - i) * '*')
 ### Pattern 5: Hollow Square
 
 Implement a Python program that prints a square pattern with a hollow center, where the user specifies the size of the square. For example, if the user inputs 6, the output should be:
@@ -63,7 +80,12 @@ Implement a Python program that prints a square pattern with a hollow center, wh
 *    *
 ******
 ```
-
+### Solution
+n = int(input())
+for i in range(n - (n - 2) - 1):
+ print(n * '')
+ for j in range(n - 2):
+  print('' + (n - 2) * ' ' + '') print(n * '')
 ### Pattern 6: Pyramid
 
 Create a Python script that prints a pyramid pattern based on the user-input number of rows. For example, if the user inputs 4, the output should be:
@@ -74,7 +96,16 @@ Create a Python script that prints a pyramid pattern based on the user-input num
  *****
 *******
 ```
-
+### Hint
+3, 2, 1, 0 space
+1, 3, 5, 7 star
+### Solution
+n = int(input())
+for i in range(n):
+ print(' ' * (n - i), '' * (i * 2 + 1))
+for i in range(n - 2, -1, -1):
+ print(' ' * (n - i), '' * (i * 2 + 1))
+ 
 ➡ Instructions:
 
 1. Utilize nested loops to control the row and column structure of each pattern.
